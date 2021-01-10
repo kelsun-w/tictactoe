@@ -1,0 +1,95 @@
+body {
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+button {
+  font-size: inherit;
+  background-color: #ff4500;
+  color: #fff;
+  border: 1px solid #ff8c69;
+  border-radius: 4px;
+  max-width: 300px;
+  height: 50px;
+  width: 100%;
+  margin: 4px;
+}
+
+input[type="radio" i]{
+  margin: 0px;
+}
+
+#gameboard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  width: 300px;
+  height: 300px;
+}
+
+#menu {
+  font-size: 32px;
+}
+
+#menu form > div {
+  margin-bottom: 15px;
+}
+
+#msg_modal {
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+  background-color: #fff;
+  border: 4px solid #ff8c69;
+  border-radius: 4px;
+  padding: 24px 9px 6px 9px;
+  box-shadow: 0 2px 8px 2px rgba(0,0,0,0.4);
+  top: 5px;
+}
+
+#msg_modal > button {
+  margin-top: 10px;
+  margin: 0px;
+}
+
+.modal_overlay {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.gameboard-tile {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 100px;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
