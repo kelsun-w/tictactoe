@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title> TicTacToe </title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div id="menu" class="screen">
-    <h1>Tic Tac Toe</h1>
-    <!-- <form class="selection">
-      <div>
-        <span>Choose Player type 1</span>
-        <input id="human" name="selection-p1" type="radio"/>
-        <label for="human">Human</label>
-        <input id="computer" name="selection-p1" type="radio"/>
-        <label for="computer">Computer</label>
-      </div>
-      <div>
-        <span>Choose Player type 2</span>
-        <input id="human" name="selection-p2" type="radio"/>
-        <label for="human">Human</label>
-        <input id="computer" name="selection-p2" type="radio"/>
-        <label for="computer">Computer</label>
-      </div>
-    </form> -->
-    <button id="btn-start">Start Game</button>
-  </div>
-  <div id="main" class="screen">
-    <button id="btn-return">Return to menu</button>
-    <button id="btn-restart">Restart Game</button>
-    <div id="gameboard"></div>
-  </div>
-  <div id="msg_modal"></div>
-  <div class="modal_overlay"></div>
-  <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title> TicTacToe </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="menu" class="screen">
+            <h1>Tic Tac Toe</h1>
+            <form class="selection">
+                <div>
+                    <span>Play against </span>
+                    <input id="human" name="selection-p" type="radio" value="human" checked/>
+                    <label for="human">🤵Human</label>
+                    <input id="computer" name="selection-p" type="radio" value="computer"/>
+                    <label for="computer">🤖Computer</label>
+                </div>
+            </form> 
+            <button id="btn-start">Start Game</button>
+        </div>
+        <div id="main" class="screen">
+            <button id="btn-return">Return to menu</button>
+            <button id="btn-restart">Restart Game</button>
+            <div id="gameboard"></div>
+        </div>
+        <div id="msg_modal"></div>
+        <div class="modal_overlay"></div>
+        <script src="script.js"></script>
+    </body>
 </html>
